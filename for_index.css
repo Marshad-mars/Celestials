@@ -62,9 +62,19 @@ html{
     background-image: url(images/simple_space.png);
     background-attachment: fixed;
 
+    /* font-family: "Libre Baskerville", serif;
+    font-style: italic; */
+}
+.preambel{
+    height: auto;
+    width: auto;
+}
+.test1{
     font-family: "Libre Baskerville", serif;
     font-style: italic;
+    color: white;
 }
+
   
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
@@ -72,3 +82,5 @@ html{
 /*position property permanently fixes the position of a div at one single partiicular place.*/
 /*<margin-top> is the css property that is used for creating the top space between 2 different divs*/
 /* the <background-attachment> property fixes a background-image fixed, through out the scroll. */
+/* it is possible to use negative padding and margining. */
+/* (primary header tags)- <header>, <nav>, <section>, <article> and <footer> */
