@@ -57,11 +57,9 @@ html{
     margin-top: 0;
     height: 600px;
     width: 912px;
-    /* background: radial-gradient(circle at bottom, teal, purple 40%, teal); */
     background: linear-gradient(to bottom, black 0%, transparent 100%);
     background-image: url(images/simple_space.png);
     background-attachment: fixed;
-
     /* font-family: "Libre Baskerville", serif;
     font-style: italic; */
 }
@@ -69,13 +67,18 @@ html{
     height: auto;
     width: auto;
 }
-.test1{
-    font-family: "Libre Baskerville", serif;
-    font-style: italic;
+.heading1{  /*here the heding1 is a container to itself and thus te spacing would take place by the padding property.*/
     color: white;
+    font-family: "Rubik Vinyl", serif;
+    padding: 25px;  
+    word-spacing: 7px;
+    font-size: 35px;    
+    text-decoration-line: underline;  /*this property turns an underline on or off*/
+    text-decoration-style: wavy;  
+    text-underline-offset: 7px;  /*offset” means a shift or distance away from a starting point.*/
+    text-decoration-thickness: 1.5px;
 }
-
-  
+/*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
 /*padding is the distance between contents, divs and the elements inside of the page*/
