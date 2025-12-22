@@ -55,7 +55,7 @@ html{
     position: relative;
     z-index: 2;
     margin-top: 0;
-    height: 600px;
+    height: auto;
     width: 100%;
     background: linear-gradient(to bottom, black 0%, transparent 100%);
     background-image: url(images/simple_space.png);
@@ -67,7 +67,7 @@ html{
     height: auto;
     width: auto;
 }
-.heading1{  /*here the heding1 is a container to itself and thus te spacing would take place by the padding property.*/
+.heading{  /*here the heding1 is a container to itself and thus te spacing would take place by the padding property.*/
     color: white;
     font-family: "Rubik Vinyl", serif;
     padding: 25px;  
@@ -78,6 +78,14 @@ html{
     text-underline-offset: 7px;  /*offset” means a shift or distance away from a starting point.*/
     text-decoration-thickness: 1.5px;
 }
+.content2{
+    height: 100%;
+    width: 1120px;
+}
+.preambel_part2{
+    display: flex;
+    justify-content: right;
+}
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
@@ -87,3 +95,6 @@ html{
 /* the <background-attachment> property fixes a background-image fixed, through out the scroll. */
 /* it is possible to use negative padding and margining. */
 /* (primary header tags)- <header>, <nav>, <section>, <article> and <footer> */
+
+/* for div horizontal alignment, we made the display-flex mode and then justify content to right or left or the center.
+    Here justify-content gives you the horizontal alignment and align-items gives you the vertical alignment. */
