@@ -108,11 +108,11 @@ html{
 }
 .def_list_name{
     text-align: left;
-    margin-left: 155px;
+    margin-left: 120px;
 }
 .def_list_content{
     text-align: left;
-    margin-left: 200px;
+    margin-left: 165px;
 }
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
