@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
 }
-html, body{
+body{
     margin: 0;
     padding: 0;
+    width: 100vw;
+    object-fit: cover;
 }
 html{
     scroll-behavior: smooth;
@@ -88,7 +90,9 @@ html{
 }
 .images_div1{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 294px;
 }
 .part2_image1{
     height: 350px;
@@ -101,6 +105,14 @@ html{
     border-radius: 20px;
     margin-right: 30px;
     width: 250px;
+}
+.def_list_name{
+    text-align: left;
+    margin-left: 155px;
+}
+.def_list_content{
+    text-align: left;
+    margin-left: 200px;
 }
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
