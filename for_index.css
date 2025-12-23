@@ -126,6 +126,32 @@ html{
     justify-content: center;
     align-items: center;
 }
+.footers_window{
+    background-color: rgb(78, 70, 70);
+    border-radius: 20px; 
+    height: auto; 
+    width: 100vw;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+.div1{
+    height: auto;
+    width: 50vw;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.div2{
+    height: auto;
+    width: 50vw;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
