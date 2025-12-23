@@ -114,6 +114,18 @@ html{
     text-align: left;
     margin-left: 165px;
 }
+.about_leading_space_agencies{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+}
+.part4_contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
