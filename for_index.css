@@ -127,15 +127,25 @@ html{
     align-items: center;
 }
 .footers_window{
-    background-color: rgb(14, 14, 14);
     border-radius: 20px; 
-    height: auto; 
+    height: 285px; 
     width: 100vw;
     margin-top: 0px;
     display: flex;
     flex-direction: row;
-    z-index: 2;
+    z-index: 1;
     position: relative;
+    overflow: hidden;
+}
+.footers_window video{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 285px; 
+    object-fit: cover; 
+    z-index: -1;
+    border-radius: 20px;    
 }
 .div1{
     height: auto;
