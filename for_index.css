@@ -172,9 +172,7 @@ html{
     width: 100vw;
 }
 .missions_content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 .part5_images{
     border-radius: 20px;
