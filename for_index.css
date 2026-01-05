@@ -197,6 +197,12 @@ html{
     width: 100vw;
     background: linear-gradient(to top, black 10%, rgb(32, 32, 32));
 }
+.planet_links{
+    color: white; 
+    font-size: 21px; 
+    margin-left: 10px; 
+    text-decoration: none;
+}
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
 /*the overflow property would maintain the div coverage of the whole page*/
