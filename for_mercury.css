@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 body{
+    background-color: rgb(245, 245, 245);
     margin: 0;
     padding: 0;
     width: 100vw;
     object-fit: cover;
 }
 .footers_window{
-    border-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     height: 285px; 
     width: 100vw;
     margin-top: 0px;
@@ -36,4 +39,22 @@ body{
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     background: linear-gradient(to bottom, black 20%, transparent);
+}
+.planetary_section{
+    z-index: -1; 
+    position: absolute; 
+    width: 100vw; 
+    height: 100vh;
+}
+.about_section{
+    z-index: 1; 
+    position: relative; 
+    width: 100vw; 
+    height: auto;
+}
+.about_main_content{
+    color: rgb(105, 105, 105);
+    background-color: white;
+    margin-bottom: -22px;
+    margin-top: -22px;
 }
