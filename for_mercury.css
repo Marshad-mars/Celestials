@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 body{
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -40,21 +40,50 @@ body{
     background: rgba(0, 0, 0, 0.6);
     background: linear-gradient(to bottom, black 20%, transparent);
 }
-.planetary_section{
-    z-index: -1; 
-    position: absolute; 
+.planetary_section_bg{
+    z-index: -2;
+    position: fixed; 
     width: 100vw; 
     height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(images/mercury_theme_bg.jpeg);
+    top: 0;
+    left: 0;
+}
+.buffer_layer_1{
+    z-index: -1;
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 80%;
+}
+.planetary_section{
+    z-index: 1; 
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
 }
 .about_section{
-    z-index: 1; 
-    position: relative; 
-    width: 100vw; 
     height: auto;
+    width: 100vw;
+    margin-top: 100vh;
 }
 .about_main_content{
     color: rgb(105, 105, 105);
     background-color: white;
     margin-bottom: -22px;
-    margin-top: -22px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 300px
 }
