@@ -1,7 +1,8 @@
 body{
-    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    width: 100vw;
+    object-fit: cover;
 }
 .footers_window{
     border-radius: 20px; 
