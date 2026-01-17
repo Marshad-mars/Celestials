@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+.footers_window{
+    border-radius: 20px; 
+    height: 285px; 
+    width: 100vw;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/footers_bg.jpeg);
+    background-size: cover;  /*this property fits the whole image to the parent container*/
+    background-position-y: 60%; /*this property controls the y-axis positioning of the background image*/
+}
+.div1{
+    height: auto;
+    width: 50vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
+.div2{
+    height: auto;
+    width: 50vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
