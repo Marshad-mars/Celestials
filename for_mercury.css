@@ -7,6 +7,17 @@ body{
     width: 100vw;
     object-fit: cover;
 }
+.tab_content{
+    color: white; 
+    font-size: 30px; 
+    font-family: Google Sans; 
+    transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+}
+.tab_content:hover{ /*hover is a CSS pseudo-class that represents the state of an element when a user places the mouse cursor over it*/
+    color: rgb(255, 102, 31);
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
 .footers_window{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -80,7 +91,7 @@ body{
     height: 100px; 
     align-self: flex-start; /*this property is used for self alignment of an element with respect to the parent div. It only works when the element is inside of a flex box*/
     transform: translateX(-14vw);  /*this property is used for visually changing the position, orientation, skew, rotation or size of an element, without affecting the normal document flow*/
-    margin-top: 20px;
+    margin-top: 5px;
     position: fixed;
 }
 .Celestials{
@@ -89,7 +100,7 @@ body{
     align-self: flex-start; 
     font-size: 40px;
     left: 2px;
-    margin-top: 43px;
+    margin-top: 30px;
     margin-left: 9vw;
     position: fixed;
 }
@@ -99,6 +110,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.planet_main_1{
+    height: 100vh;
+    width: 60vw;
+    display: block;
+}
+.tab_section{
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: right;
 }
 .about_section{
     z-index: 2;
