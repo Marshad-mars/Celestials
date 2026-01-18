@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 body{
     /* background-color: rgb(245, 245, 245); */
@@ -74,6 +75,20 @@ body{
     top: 0;
     left: 0;
     display: flex;
+}
+.celestials_symbol{
+    height: 100px; 
+    align-self: flex-start; 
+    transform: translateX(-70px);
+    margin-top: 10px;
+}
+.Celestials{
+    color: white;
+    font-family: "Rubik Vinyl", serif;
+    align-self: flex-start; 
+    font-size: 38px;
+    transform: translateX(-60px);
+    margin-top: 35px;
 }
 .mercur_image_div{
     height: 100vh;
