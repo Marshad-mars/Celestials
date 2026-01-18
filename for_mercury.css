@@ -78,17 +78,20 @@ body{
 }
 .celestials_symbol{
     height: 100px; 
-    align-self: flex-start; 
-    transform: translateX(-70px);
-    margin-top: 10px;
+    align-self: flex-start; /*this property is used for self alignment of an element with respect to the parent div. It only works when the element is inside of a flex box*/
+    transform: translateX(-14vw);  /*this property is used for visually changing the position, orientation, skew, rotation or size of an element, without affecting the normal document flow*/
+    margin-top: 20px;
+    position: fixed;
 }
 .Celestials{
     color: white;
     font-family: "Rubik Vinyl", serif;
     align-self: flex-start; 
-    font-size: 38px;
-    transform: translateX(-60px);
-    margin-top: 35px;
+    font-size: 40px;
+    left: 2px;
+    margin-top: 43px;
+    margin-left: 9vw;
+    position: fixed;
 }
 .mercur_image_div{
     height: 100vh;
