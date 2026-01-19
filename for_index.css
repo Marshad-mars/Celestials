@@ -182,6 +182,10 @@ html{
     width: 360px; 
     margin-left: 30px; 
     margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.part5_images:hover{
+    transform: translateY(-8px);
 }
 .nav{
     z-index: 2;
@@ -199,9 +203,40 @@ html{
 }
 .planet_links{
     color: white; 
-    font-size: 21px; 
-    margin-left: 10px; 
+    font-family: Google Sans; 
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, text-decoration ease;
+}
+.planet_links:hover{
+    color: rgb(255, 137, 26);
+    text-decoration: underline;
+    transform: translateX(10px);
+}
+.solar_link{
+    color: white; 
+    font-size: 21px; 
+    text-decoration: none; 
+    margin-top: 15px; 
+    margin-left: -10px;
+    transition: color 0.3s ease, font-size 0.4s ease, text-decoration ease;
+}
+.solar_link:hover{
+    color: rgb(255, 137, 26);
+    text-decoration: underline;
+    font-size: 22px;
+}
+.for_more_missions{
+    margin-top: 20px; 
+    color: rgb(11, 218, 255); 
+    font-size: 25px; 
+    text-decoration: none; 
+    font-family: Google Sans;
+    transition: color 0.4s ease, transform 0.4s ease, text-decoration ease, font-size 0.3s ease;
+}
+.for_more_missions:hover{
+    color: rgb(255, 137, 26);
+    text-decoration: underline;
+    font-size: 26px;
 }
 /*All such <text-decorational> properties are used for the styling of an underline under text or strings*/
 /*the 100%s are the way of adjusting the width and the height of the image according to its div container*/
