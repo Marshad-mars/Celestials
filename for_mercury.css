@@ -11,10 +11,10 @@ body{
     color: white; 
     font-size: 30px; 
     font-family: Google Sans; 
-    transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, text-decoration ease;
 }
 .tab_content:hover{ /*hover is a CSS pseudo-class that represents the state of an element when a user places the mouse cursor over it*/
-    color: rgb(255, 102, 31);
+    color: rgb(255, 102, 31);  /*all the required styling are done inside of the :hover of the element and the implementation is doen with the transition property, inside of the main css block of the element*/
     transform: translateY(-5px);
     text-decoration: underline;
 }
