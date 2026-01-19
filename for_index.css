@@ -98,14 +98,100 @@ html{
 .part2_image1{
     height: 350px;
     border-radius: 20px;
-    margin-left: 60px;
+    margin-left: 30px;
     width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part2_image1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
 }
 .part2_image2{
     height: 350px;
     border-radius: 20px;
-    margin-left: 90px;
+    margin-right: 30px;
     width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part2_image2:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.nebula_image{
+    border-radius: 20px; 
+    margin-right: 30px; 
+    height: 250px; 
+    width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nebula_image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 10px red; /*this property is used for controling and give different colors shadow effects to a box*/
+}
+.nasa_org_logo{
+    border-radius: 20px; 
+    margin-right: 30px; 
+    height: 250px; 
+    width: 300px; 
+    margin-left: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nasa_org_logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.isro_org_logo{
+    border-radius: 20px; 
+    margin-right: 30px; 
+    height: 250px; 
+    width: 300px; 
+    margin-left: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.isro_org_logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.esa_org_logo{
+    border-radius: 20px;
+    margin-right: 30px; 
+    height: 250px; 
+    width: 360px; 
+    margin-left: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.esa_org_logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.roscosmos_org_logo{
+    border-radius: 20px; 
+    margin-right: 30px; 
+    height: 300px; 
+    width: 300px; 
+    margin-left: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.roscosmos_org_logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.cnsa_org_logo{
+    border-radius: 20px;
+    margin-right: 30px; 
+    height: 250px; 
+    width: 360px; 
+    margin-left: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cnsa_org_logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
 }
 .def_list_name{
     text-align: left;
@@ -126,6 +212,49 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.part6_image1{
+    height: 300px; 
+    border-radius: 20px; 
+    width: 290px;
+    margin-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part6_image1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.part6_image2{
+    height: 250px; 
+    border-radius: 20px; 
+    width: 290px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part6_image2:hover{
+    transform: translateY(8px);
+    box-shadow: 0px 0px 15px 10px red;
+}
+.part7_image1{
+    height: 230px; 
+    border-radius: 20px; 
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part7_image1:hover{
+    transform: scale(1.1);  /*the scale() is used for adjusting the scaling size of the image*/
+    box-shadow: 0px 0px 15px 10px red;
+}
+.part7_image2{
+    height: 230px; 
+    border-radius: 20px; 
+    width: 350px; 
+    margin-left: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.part7_image2:hover{
+    transform: scale(1.1);  /*the scale() is used for adjusting the scaling size of the image*/
+    box-shadow: 0px 0px 15px 10px red;
 }
 .footers_window{
     border-radius: 20px; 
@@ -182,10 +311,11 @@ html{
     width: 360px; 
     margin-left: 30px; 
     margin-top: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .part5_images:hover{
     transform: translateY(-8px);
+    box-shadow: 0px 0px 15px 10px red;
 }
 .nav{
     z-index: 2;
