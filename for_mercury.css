@@ -7,16 +7,44 @@ body{
     width: 100vw;
     object-fit: cover;
 }
+.mercury_image{
+    height: 250px; 
+    margin-left: 100px; 
+    position: relative;
+    border-radius: 270px;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+.mercury_image:hover{
+    height: 270px;
+    box-shadow: 0px 0px 45px 20px rgb(97, 97, 97);
+}
 .tab_content{
     color: white; 
+    position: relative;
     font-size: 30px; 
     font-family: Google Sans; 
-    transition: color 0.3s ease, transform 0.3s ease, text-decoration ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.tab_content::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.tab_content:hover::after{
+    transform: scaleX(1);
 }
 .tab_content:hover{ /*hover is a CSS pseudo-class that represents the state of an element when a user places the mouse cursor over it*/
     color: rgb(255, 102, 31);  /*all the required styling are done inside of the :hover of the element and the implementation is doen with the transition property, inside of the main css block of the element*/
     transform: translateY(-5px);
-    text-decoration: underline;
 }
 .footers_window{
     border-bottom-left-radius: 20px;
