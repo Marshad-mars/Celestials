@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    /* background-color: rgb(245, 245, 245); */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    object-fit: cover;
+}
+.venus_image{
+    height: 250px; 
+    margin-left: 100px; 
+    position: relative;
+    border-radius: 270px;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+.venus_image:hover{
+    height: 270px;
+    box-shadow: 0px 0px 45px 20px rgb(97, 97, 97);
+}
+.venus_info{
+    position: relative;
+    color: white;
+    margin-top: 0px;
+    font-size: 34px;
+    font-family: Google Sans;
+    text-align: left;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+.venus_info::after{
+    content: "an integrated explanation";
+    position: absolute;
+    margin-left: 8px;
+    font-size: 12px;
+    font-family: Libre Baskerville, serif;
+    font-style: italic;
+    margin-top: 21px;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+.venus_info:hover::after{
+    transform: scaleX(1);
+}
+.venus_info:hover{
+    transform: translateX(15px);
+    color: orange;
+}
+.main_content_1{
+    color: white;
+    margin-top: -18px;
+    margin-right: 50px;
+    font-family: Google Sans;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 13px
+}
+.list_hover{
+    transform: translateX(0px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.list_hover:hover{
+    transform: translateX(15px);
+    color: rgb(255, 63, 63);
+}
+.tab_content{
+    color: white; 
+    position: relative;
+    font-size: 30px; 
+    font-family: Google Sans; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.tab_content::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: orange;
+
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.tab_content:hover::after{
+    transform: scaleX(1);
+}
+.tab_content:hover{ /*hover is a CSS pseudo-class that represents the state of an element when a user places the mouse cursor over it*/
+    color: rgb(255, 102, 31);  /*all the required styling are done inside of the :hover of the element and the implementation is doen with the transition property, inside of the main css block of the element*/
+    transform: translateY(-5px);
+}
+.footers_window{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 285px; 
+    width: 100vw;
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/footers_bg.jpeg);
+    background-size: cover;  /*this property fits the whole image to the parent container*/
+    background-position-y: 60%; /*this property controls the y-axis positioning of the background image*/
+}
+.div1{
+    height: auto;
+    width: 50vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
+.div2{
+    height: auto;
+    width: 50vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
+.planetary_section_bg{
+    z-index: -2;
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(images/venus_theme_bg.jpeg);
+    top: 0;
+    left: 0;
+}
+.buffer_layer_1{
+    z-index: -1;
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 59%;  /*this property is used for controling the opecity of the window of a div*/
+}
+.planetary_section{
+    z-index: 1; 
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.celestials_symbol{
+    height: 100px; 
+    align-self: flex-start; /*this property is used for self alignment of an element with respect to the parent div. It only works when the element is inside of a flex box*/
+    transform: translateX(-14vw);  /*this property is used for visually changing the position, orientation, skew, rotation or size of an element, without affecting the normal document flow*/
+    margin-top: 5px;
+    position: fixed;
+}
+.Celestials{
+    color: white;
+    font-family: "Rubik Vinyl", serif;
+    align-self: flex-start; 
+    font-size: 40px;
+    left: 2px;
+    margin-top: 30px;
+    margin-left: 9vw;
+    position: fixed;
+}
+.venus_image_div{
+    height: 100vh;
+    width: 40vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planet_main_1{
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.tab_section{
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: right;
+}
+.planetary_description_1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*
+    the (top), (left), (right) and (bottom) properties in css are used for precisely adjusting the positioning of a box with
+    reference to an another box.
+*/
