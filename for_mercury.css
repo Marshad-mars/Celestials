@@ -222,11 +222,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.previous_page{
-    display: flex;
-    justify-content: left;
-    margin-top: -60px;
-}
 /*
     the (top), (left), (right) and (bottom) properties in css are used for precisely adjusting the positioning of a box with
     reference to an another box.
