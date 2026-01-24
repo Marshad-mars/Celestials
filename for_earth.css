@@ -208,7 +208,7 @@ body{
 .previous_page{
     display: flex;
     justify-content: left;
-    margin-top: -60px;
+    margin-top: -65px;
 }
 /*
     the (top), (left), (right) and (bottom) properties in css are used for precisely adjusting the positioning of a box with
